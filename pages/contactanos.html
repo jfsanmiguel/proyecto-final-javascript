@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/2-removebg-preview_wzztqs.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- mi estilo -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contáctanos</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav-flex">
+
+            <!-- barra de navegación de contactanos -->
+            <nav class="navbar navbar-expand-lg" style="background-color: #545643;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="header__logo"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/1_hsk1yc.png"
+                            alt="Logo FreshDia"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                            <a class="nav-link" href="../pages/nuestra_marca.html">Nuestra Marca</a>
+                            <a class="nav-link" href="../pages/contactanos.html">Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <form class="header__busqueda" action="" method="get">
+                <input type="search" name="busqueda">
+                <button type="submit" class="btn btn-primary main__boton">Buscar</button>
+            </form>
+    </header>
+    <main class="main">
+        <h1 class="main__encabezado">Contáctanos</h1>
+        <section class="main__seccion">
+            <div class="main__conection">
+                <div class="main__contacto">
+                    <div>
+                        <a href="https://www.facebook.com/"><img class="main__comun"
+                                src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Facebook_ozbxiu.png"
+                                alt="Facebook"></a>
+                        <a href="https://www.instagram.com/"><img class="main__comun"
+                                src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Instagram_kz6r7f.png"
+                                alt="Instagram"></a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/"><img class="main__comun"
+                                src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Twitter_o2ix3b.png"
+                                alt="Twitter"></a>
+                        <a href="https://www.tiktok.com/"><img class="main__comun"
+                                src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/TikTok_dowfgg.png"
+                                alt="TikTok"></a>
+                    </div>
+                </div>
+
+                <div class="main__formulario">
+
+                    <form class="main__display" action="#" method="get">
+                        <div class="main__parte">
+                            <form class="form-floating">
+                                <label for="Nombre">Nombre\Empresa</label>
+                                <input type="text" class="form-control" id="Nombre" placeholder="aaaaaaaaaaaaaaaa"
+                                    value="Nombre">  
+                            </form>
+                        </div>
+                        <div class="main__parte">
+                            <form class="form-floating">
+                                <input type="email" class="form-control" id="Correo" placeholder="name@example.com"
+                                    value="email@ejemplo.com">
+                                <label for="Correo">Correo electrónico</label>
+                            </form>
+                        </div>
+                        <div class="main__parte">
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" id="ID" placeholder="0000000000"
+                                            value="1234567890">
+                                        <label for="ID">Identificación</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelectGrid">
+                                            <option selected>Seleccionar</option>
+                                            <option value="1">Cedula de Ciudadanía (C.C)</option>
+                                            <option value="2">Número de Identificación Tributaria (NIT) </option>
+                                            <option value="3">Cédula de Extranjería (C.E)</option>
+                                        </select>
+                                        <label for="floatingSelectGrid">Tipo de documento</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main__parte">
+                            <form class="form-floating">
+                                <input type="tel" class="form-control" id="floatingInputValue" placeholder="Telefono"
+                                    value="Celular">
+                                <label for="floatingInputValue">Teléfono Celular</label>
+                            </form>
+                        </div>
+                        <div class="main__parte">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Acepto términos y condiciones
+                                </label>
+                            </div>
+                            <div class="main__parte">
+                                <button type="submit" class="btn btn-primary main__boton">Enviar</button>
+                            </div>
+                            
+                    </form>
+                </div>
+                </form>
+            </div>
+            <div>
+                <iframe class="main__gif" src="https://giphy.com/embed/8JNmK2TcgnkiZAjHcG" width="480" height="270"
+                    frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe class="main__gif" src="https://giphy.com/embed/zqtOYPQZ8Kb5pMlH8p" width="480" height="480"
+                    frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+            </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section class="footer__foot">
+            <!-- acceso a redes sociales por footer -->
+            <div class="footer__social">
+                <div><a href="https://www.facebook.com/"><img class="footer__redes"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Facebook_ozbxiu.png"
+                            alt="Facebook"></a>
+                </div>
+                <div><a href="https://www.instagram.com/"><img class="footer__redes"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Instagram_kz6r7f.png"
+                            alt="Instagram"></a></div>
+                <div><a href="https://twitter.com/"><img class="footer__redes"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Twitter_o2ix3b.png"
+                            alt="Twitter"></a></div>
+                <div><a href="https://www.tiktok.com/"><img class="footer__redes"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/TikTok_dowfgg.png"
+                            alt="TikTok"></a></div>
+            </div>
+            <!-- terminos y condiciones -->
+            <div class="footer__pie">
+                <p><a href="./productos.html">Información</a></p>
+                <p>Ratrea tu pedido</p>
+                <p>FreshDia &copy all rights reserved</p>
+
+            </div>
+        </section>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+            </script>
+</body>
+
+</html>

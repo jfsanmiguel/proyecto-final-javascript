@@ -1,0 +1,63 @@
+.main {
+    background-color: $verde;
+    font-family: $conver;
+    color: $verde-oscuro;
+
+    &__encabezado {
+        color: $rojo;
+        @extend .centrar;
+    }
+    &__images{
+        display: flex;
+        justify-content: space-around;
+
+       
+    }
+    &__galeria{
+        width: 30%;
+    }
+    
+
+    &__eslogan {
+        font-style: italic;
+        @extend .centrar;
+
+    }
+
+    &__parrafo {
+        @extend .justificar;
+    }
+
+    &__enlace {
+        
+        font-weight: bolder;
+        padding: 10px;
+        a {
+            color: $rojo;
+            text-decoration: none;
+        }
+    }
+    &__pedido{
+        @extend .centrar;
+    }
+    &__posicion{
+        @extend .centrar;
+    }
+    &__boton{
+        background-color: $rosa;
+        border-color: $verde-oscuro;
+        color: $blanco;
+        &:hover{
+            background-color: $naranja;
+            transform: scale(1.13);
+        }
+        
+    }
+
+}
+//estrategia mobile last-----max-width
+@media (max-width: 720px){
+   .main{
+    font-size: medium;
+   }
+}

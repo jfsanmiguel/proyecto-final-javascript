@@ -1,0 +1,18 @@
+//extend
+.flextend{
+    display: flex;
+    justify-content: space-evenly;
+}
+.centrar{
+    text-align: center;
+    padding: 4px;
+}
+.justificar{
+    text-align: justify;
+    padding: 5px;
+}
+
+//mixin
+@mixin sizing ($ancho){
+    width: $ancho;
+}

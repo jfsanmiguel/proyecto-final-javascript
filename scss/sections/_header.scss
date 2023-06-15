@@ -1,0 +1,27 @@
+.header{
+    font-family: $belleza;
+    font-size: x-large;
+    
+    a{
+        color: $naranja;
+    }
+    
+    &__logo{
+        @include sizing(88px);
+        margin: 5px;
+        &:hover{
+            transform: scale(1.13);
+            transition: 0.25s;
+        }
+    }
+    &__busqueda{
+        background-color: $verde;
+    }
+}
+
+//estrategia mobile last-----max-width
+@media(max-width:720px){
+    .header{
+        font-size: medium;
+    }
+}

@@ -1,0 +1,40 @@
+.footer{
+
+    background-color: $rosa;
+    
+    &__foot {
+        justify-content: center;
+    }
+    
+    &__social {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__redes {
+        width: 45px;
+        margin: 7px;
+    }
+    
+    &__pie{
+        display: flex;
+        
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: $verde-oscuro;
+        
+        a{
+            text-decoration: none;
+            color: $rojo;
+        }
+    }
+    
+}
+//estrategia mobile last-----max-width
+@media(max-width:720px){
+    .footer{
+        &__pie{
+            flex-direction: column;
+        }
+    }
+}

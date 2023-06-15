@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+    href="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/2-removebg-preview_wzztqs.png">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- mi estilo -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>FreshDia</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <header class="header">
+        <nav class="header__nav-flex">
+          <!-- barra de navegación del index -->
+          <nav class="navbar navbar-expand-lg" style="background-color: #545643;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img class="header__logo"
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/1_hsk1yc.png"
+                  alt="Logo FreshDia"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                  <a class="nav-link" href="./pages/productos.html">Productos</a>
+                  <a class="nav-link" href="./pages/nuestra_marca.html">Nuestra Marca</a>
+                  <a class="nav-link" href="./pages/contactanos.html">Contáctanos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <form class="header__busqueda" action="" method="get">
+            <input type="search" name="busqueda">
+            <button type="submit" class="btn btn-primary main__boton">Buscar</button>
+          </form>
+    
+      </header>
+      <main class="main">
+    
+        <!-- contenido con galería de imágenes de las materias primas, eslogan e introducción de la marca -->
+        <div class="main__seccion">
+          <h1 class="main__encabezado">FreshDia</h1>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner main__images">
+              <div class="carousel-item active main__galeria">
+                <img
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426709/ProyectoFreshFood/pimiento_rvdjlp.jpg"
+                  class="d-block w-100" alt="Pimientos">
+              </div>
+              <div class="carousel-item main__galeria">
+                <img
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426672/ProyectoFreshFood/champi%C3%B1ones_uctuqv.webp"
+                  class="d-block w-100" alt="Champiñon">
+              </div>
+              <div class="carousel-item main__galeria">
+                <img
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426655/ProyectoFreshFood/6NDWKSSMW5DNJN7VKTCHTCIKV4_wcgcah.jpg"
+                  class="d-block w-100" alt="espinaca">
+              </div>
+              <div class="carousel-item main__galeria">
+                <img
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426677/ProyectoFreshFood/comer-muchas-zanahorias_gruqax.jpg"
+                  class="d-block w-100" alt="Zanahorias">
+              </div>
+              <div class="carousel-item main__galeria">
+                <img
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426697/ProyectoFreshFood/d74dd39a-9bbb-4d8f-8019-6020653e1114_fc1w8m.jpg"
+                  class="d-block w-100" alt="aguacate">
+              </div>
+              <div class="carousel-item main__galeria">
+                <img src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426686/ProyectoFreshFood/frutas_ng3xo8.jpg"
+                  class="d-block w-100" alt="Frutas">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+          <section>
+    
+            <h2 class="main__eslogan">Alimentos frescos, saludables y asequibles para el día a día</h2>
+            <article>
+              <p class="main__parrafo">¿Estás buscando una alternativa saluable para tu alimentación? En FreshDia puedes
+                encontrar
+                diferentes opciones a buen precio. Desde snacks mínimamente procesados recomendados para los
+                jóvenes
+                hasta compotas recomendadas para los adultos mayores, puedes experimentar los sabores que nos
+                ofrece
+                la naturaleza de forma sostenible.</p>
+            </article>
+            <div class="main__enlace">
+              <a href="./pages/nuestra_marca.html">Saber más</a>
+            </div>
+            <h3 class="main__pedido">Realiza tu pedido</h3>
+            <p class="main__posicion">
+              <a class="btn btn-primary main__boton" data-bs-toggle="collapse" href="#pedidos1" role="button"
+                aria-expanded="false" aria-controls="pedidos1">Haz tus pedidos personales</a>
+              <button class="btn btn-primary main__boton" type="button" data-bs-toggle="collapse" data-bs-target="#pedidos2"
+                aria-expanded="false" aria-controls="pedidos2">Haz tus pedidos al por
+                mayor</button>
+              <button class="btn btn-primary main__boton" type="button" data-bs-toggle="collapse"
+                data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="pedidos1 pedidos2">Haz tus pedidos
+                personalizados</button>
+            </p>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="pedidos1">
+                  <div class="card card-body">
+                    Selecciona tus productos para consumo personal y pídelos en la tienda para traerlos a tu residencia
+                    por domicilio.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="pedidos2">
+                  <div class="card card-body">
+                    Selecciona tus productos al por mayor y pídelos en la tienda para distribuirlos en tu negocio.
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <section class="footer__foot">
+          <!-- acceso a redes sociales por footer -->
+          <div class="footer__social">
+            <div><a href="https://www.facebook.com/"><img class="footer__redes"
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Facebook_ozbxiu.png"
+                  alt="Facebook"></a>
+            </div>
+            <div><a href="https://www.instagram.com/"><img class="footer__redes"
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Instagram_kz6r7f.png"
+                  alt="Instagram"></a></div>
+            <div><a href="https://twitter.com/"><img class="footer__redes"
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Twitter_o2ix3b.png"
+                  alt="Twitter"></a></div>
+            <div><a href="https://www.tiktok.com/"><img class="footer__redes"
+                  src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/TikTok_dowfgg.png"
+                  alt="TikTok"></a></div>
+          </div>
+          <!-- terminos y condiciones -->
+          <div class="footer__pie">
+            <div>
+              <p><a href="./pages/productos.html">Información</a></p>
+            </div>
+            <div>
+              <p>Ratrea tu pedido</p>
+            </div>
+            <div>
+              <p>FreshDia &copy all rights reserved</p>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <!-- bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+</body>
+</html>

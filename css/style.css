@@ -299,8 +299,13 @@
 .main .input_sesion {
   width: 30%; }
 
+.main__titulo {
+  height: 720px; }
+
 @media (max-width: 720px) {
   .main__login {
     height: 720px; }
   .main .input_sesion {
-    width: 100%; } }
+    width: 100%; }
+  .main__titulo {
+    height: 200px; } }

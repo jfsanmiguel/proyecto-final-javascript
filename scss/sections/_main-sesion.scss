@@ -9,6 +9,9 @@
     .input_sesion{
         @include sizing(30%);
     }
+    &__titulo{
+        height: 720px;
+    }
 
 }
 @media(max-width: 720px) {
@@ -18,6 +21,9 @@
         }
         .input_sesion{
             @include sizing(100%);
+        }
+        &__titulo{
+            height: 200px;
         }
     }
 }

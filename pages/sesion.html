@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon"
         href="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/2-removebg-preview_wzztqs.png">
@@ -12,12 +11,12 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- mi estilo -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Productos</title>
+    <title>Sesion de usuario</title>
 </head>
 
 <body>
     <header class="header">
-        <!-- barra e navegación de productos -->
+        <!-- barra de navegación de tienda -->
         <nav class="navbar navbar-expand-lg" style="background-color: #545643;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img class="header__logo"
@@ -41,33 +40,27 @@
         </nav>
     </header>
     <main class="main">
-        <div class="main__seccion">
-            <h1 class="main__encabezado">Productos</h1>
-            <section class="main__pflex">
-                <div class="main__section main__pfirst entrada"><img class="main__productos"
-                        src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/3_ctlvnm.png"
-                        alt="snacks">
-                    <p>FreshDia snacks son alimentos mínimamente procesados ya sea en secado o por freidora en aceite de
-                        oliva. Son adecuados para comer en recesos del estudio o trabajo </p>
+        <div id="sesion">
+            <div class="main__login">
+                <h1 class="main__inicio">Iniciar Sesión</h1>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+                    <input type="email" class="form-control input_sesion" id="exampleFormControlInput1" name="usuario"
+                        placeholder="Nombre@ejemplo.com">
                 </div>
-                <div class="main__section main__center entrada"><img class="main__productos"
-                        src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/4_kaokdf.png"
-                        alt="crush">
-                    <p>Freshdia crush son la alternativa ideal para la alimentación de los adultos mayores. Su
-                        presentación
-                        en forma de compotas de vegetales y frutas aportan tanto macro como micronutrientes esenciales
-                        para una
-                        nutrición adecuada</p>
-                </div>
-                <div class="main__section main__plast entrada"><img class="main__productos"
-                        src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/5_dgwhbb.png"
-                        alt="salad">
-                    <p>FreshDia salad son acompañamientos vegetales y frutales en forma de ensaladas. Esta línea es
-                        adecuada
-                        para platos fuertes en casa/restaurante o para llevar.</p>
-                </div>
-            </section>
+                <div>
+                    <label for="inputPassword5" class="form-label">Contraseña</label>
+                    <input type="password" id="inputPassword5" class="form-control input_sesion" name="contraseña" aria-labelledby="passwordHelpBlock">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Su contraseña debe tener entre 8-20 caracteres,puede contener tanto letras como números.
+                    </div>
+                    <div>
+                        <button type="submit" id="boton_login" class="btn btn-primary mb-3 main__boton">Iniciar Sesión</button>
+                    </div></div>
+                
+            </div>
         </div>
+
     </main>
     <footer class="footer">
         <section class="footer__foot">
@@ -89,13 +82,19 @@
             </div>
             <!-- terminos y condiciones -->
             <div class="footer__pie">
-                <p><a href="./productos.html">Información</a></p>
-                <p>Ratrea tu pedido</p>
-                <p>FreshDia &copy all rights reserved</p>
-
+                <div>
+                    <p><a href="./pages/productos.html">Información</a></p>
+                </div>
+                <div>
+                    <p>Ratrea tu pedido</p>
+                </div>
+                <div>
+                    <p>FreshDia &copy all rights reserved</p>
+                </div>
             </div>
         </section>
     </footer>
+    <script src="../archivosjs/sesion.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">

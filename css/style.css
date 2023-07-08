@@ -75,6 +75,14 @@
 .main__imagenes {
   width: 80%; }
 
+.main__ninput {
+  width: 10%; }
+
+.main__forms {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .main .salto {
   animation: bounce-in-top 1.1s both; }
 
@@ -125,7 +133,11 @@
 @media (max-width: 720px) {
   .row {
     flex-direction: column;
-    align-content: center; } }
+    align-content: center; }
+  .main__ninput {
+    width: 100%; }
+  .main__forms {
+    display: block; } }
 
 .main__pflex {
   display: flex;
@@ -277,3 +289,18 @@
 @media (max-width: 720px) {
   .footer__pie {
     flex-direction: column; } }
+
+.main__login {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 1000px; }
+
+.main .input_sesion {
+  width: 30%; }
+
+@media (max-width: 720px) {
+  .main__login {
+    height: 720px; }
+  .main .input_sesion {
+    width: 100%; } }

@@ -63,6 +63,7 @@ const recorrercarrito=(arr1,arr2,fn)=>{
 
 }
 //simulador compras
+
 while (opcion != 9) {
     opcion = parseInt(prompt("ingrese numero de 0 a 9 para realizar acción: 0-bienvenida , 1-comprar pure de verdura, 2-comprar chips de manzana, 3-comprar zanahoria, 4-comprar legumbres, 5-calcular impuestos, 6-buscar producto, 7-eliminar útlima compra,8-pagar, 9-salir menu"));
     switch (opcion) {

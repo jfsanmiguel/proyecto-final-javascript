@@ -34,15 +34,11 @@
                         <a class="nav-link" href="../pages/productos.html">Productos</a>
                         <a class="nav-link" href="../pages/nuestra_marca.html">Nuestra Marca</a>
                         <a class="nav-link" href="../pages/contactanos.html">Contáctanos</a>
+                        <a class="nav-link" href="../pages/sesion.html">Iniciar Sesión</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <form class="header__busqueda" action="" method="get">
-            <input type="search" name="busqueda">
-            <button type="submit" class="btn btn-primary main__boton">Buscar</button>
-        </form>
-
     </header>
     <main class="main">
         <div class="main__seccion">
@@ -54,36 +50,99 @@
                             src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683428894/ProyectoFreshFood/top-view-of-veggie-puree-photo_lti3ce.jpg"
                             alt="pures verduras">
                         <p>Nombre: Puré de verduras</p>
-                        <p>Precio: $15USD/u / $45USD/kg</p>
+                        <p>Seleccione tipo de cantidad de compra:</p>
+                        <div class="form-check main__forms">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Precio Unitario: $15 USD/u
+                            </label>
+                          </div>
+                          <div class="form-check main__forms">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Precio al por mayor: $45 USD/kg
+                            </label>
+                          </div>
                         <p>Disponibilidad: 10u / 100kg</p>
-                        <button type="submit" class="btn btn-primary main__boton">Comprar</button>
+                        <div class="mb-3 main__forms">
+                            <label for="exampleFormControlInput1" class="form-label">Ingrese cantidad de compra:</label>
+                            <input type="number" class="form-control main__ninput" id="FormControlInput1" placeholder="0">
+                          </div>
+                        <button type="submit" class="btn btn-primary main__boton" id="boton__pure">Comprar</button>
                     </div>
                     <div class="col main__pad salto"><img class="main__imagenes"
                             src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683428894/ProyectoFreshFood/recipe_bakedapplechips_fb_jvupdc.jpg"
                             alt="chips manzana">
                         <p>Nombre: Chips de manzana</p>
-                        <p>Precio: $10USD/u / $30USD/kg</p>
+                        <p>Seleccione tipo de cantidad de compra:</p>
+                        <div class="form-check main__forms">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Precio Unitario: $10 USD/u
+                            </label>
+                          </div>
+                          <div class="form-check main__forms">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Precio al por mayor: $30 USD/kg
+                            </label>
+                          </div>
                         <p>Disponibilidad: 10u / 50kg</p>
-                        <button type="submit" class="btn btn-primary main__boton">Comprar</button>
+                        <div class="mb-3 main__forms">
+                            <label for="exampleFormControlInput1" class="form-label">Ingrese cantidad de compra:</label>
+                            <input type="number" class="form-control main__ninput" id="FormControlInput1" placeholder="0">
+                          </div>
+                        <button type="submit" class="btn btn-primary main__boton" id="boton__manzana">Comprar</button>
                     </div>
                     <div class="col main__pad salto">
                         <img class="main__imagenes"
                             src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683428894/ProyectoFreshFood/chips_de_zanahoria_al_horno_61512_orig_do3cpp.jpg"
                             alt="chips zanahoria">
                         <p>Nombre: Chips zanahoria</p>
-                        <p>Precio: $12USD/u / $36USD/kg</p>
+                        <p>Seleccione tipo de cantidad de compra</p>
+                        <div class="form-check main__forms">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Precio Unitario: $12 USD/u
+                            </label>
+                          </div>
+                          <div class="form-check main__forms">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Precio al por mayor: $36 USD/kg
+                            </label>
+                          </div>
                         <p>Disponibilidad: 15u / 125kg</p>
-                        <button type="submit" class="btn btn-primary main__boton">Comprar</button>
+                        <div class="mb-3 main__forms">
+                            <label for="exampleFormControlInput1" class="form-label">Ingrese cantidad de compra:</label>
+                            <input type="number" class="form-control main__ninput" id="FormControlInput1" placeholder="0">
+                          </div>
+                        <button type="submit" class="btn btn-primary main__boton" id="boton__zanahoria">Comprar</button>
                     </div>
                     <div class="col main__pad salto">
                         <img class="main__imagenes"
                             src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683428894/ProyectoFreshFood/tiendas-en-linea-snacks-saludables_apoewi.jpg"
                             alt="mix legumbres">
                         <p>Nombre: Mix de legumbres y platano</p>
-                        <p>Precio: $8USD/u / $24USD/kg</p>
+                        <p>Seleccione tipo de cantidad de compra</p>
+                        <div class="form-check main__forms">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Precio Unitario: $8 USD/u
+                            </label>
+                          </div>
+                          <div class="form-check main__forms">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Precio al por mayor: $24 USD/kg
+                            </label>
+                          </div>
                         <p>Disponibilidad: 20u / 75kg</p>
-                        <button type="submit" class="btn btn-primary main__boton">Comprar</button>
-                    </div>
+                        <div class="mb-3 main__forms">
+                            <label for="exampleFormControlInput1" class="form-label">Ingrese cantidad de compra:</label>
+                            <input type="number" class="form-control main__ninput" id="FormControlInput1" placeholder="0">
+                          </div>
+                        <button type="submit" class="btn btn-primary main__boton" id="boton__legumbre">Comprar</button>
                 </div>
             </div>
     </main>
@@ -114,6 +173,7 @@
             </div>
         </section>
     </footer>
+    <script src="../archivosjs/tienda.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">

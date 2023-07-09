@@ -1,10 +1,19 @@
 .main{
+    &__sesion{
+        display: flex;
+    }
     &__login{
         display: flex;
         flex-direction: column;
         padding: 10px;
-        height: 1000px;
+        height: 500px;
         
+    }
+    &__registro{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 500px;
     }
     .input_sesion{
         @include sizing(30%);

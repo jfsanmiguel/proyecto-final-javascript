@@ -19,6 +19,17 @@
     .salto {
         animation: bounce-in-top 1.1s both;
     }
+    .compra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .compra_imagen{
+        height:200px;
+    }
+    .compra_informacion{
+        padding: 5px;
+    }
 }
 
 @keyframes bounce-in-top {

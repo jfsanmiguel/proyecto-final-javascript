@@ -53,6 +53,15 @@
         }
         
     }
+    &__sect{
+        padding-left: 500px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__crisp{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 //estrategia mobile last-----max-width

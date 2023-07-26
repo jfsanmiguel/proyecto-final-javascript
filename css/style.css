@@ -64,6 +64,13 @@
     .main__boton:hover {
       background-color: #DFA06E;
       transform: scale(1.13); }
+  .main__sect {
+    padding-left: 500px;
+    display: flex;
+    flex-wrap: wrap; }
+  .main__crisp {
+    display: flex;
+    flex-direction: column; }
 
 @media (max-width: 720px) {
   .main {
@@ -320,7 +327,7 @@
   width: 30%; }
 
 .main__titulo {
-  height: 720px; }
+  height: 360px; }
 
 @media (max-width: 720px) {
   .main__login {

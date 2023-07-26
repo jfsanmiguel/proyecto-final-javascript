@@ -1,3 +1,4 @@
+
 //variables
 let cantidad1 = document.getElementById("cantidad1");
 let cantidad2 = document.getElementById("cantidad2");
@@ -84,19 +85,24 @@ comprap.addEventListener("click", () => {
         pureVerdura.id++;
         carrito.push(pureVerdura);
         subtotal = subtotal + multiplicar(cantidad1.value, pureVerdura.precioUnitario);
-        console.log("compra de " + pureVerdura.cantCompra);
+        setTimeout(() => {
+            swal("Producto agregado", "se agregaron "+cantidad1.value+" unidades al carrito por valor de $" + pureVerdura.cantCompra, "success");
+        }, 500);   
     } else if (check_pm.checked && cantidad1.value <= pureVerdura.cantMayor) {
         pureVerdura.cantCompra = multiplicar(cantidad1.value, pureVerdura.precioMayor);
         pureVerdura.id++;
         carrito.push(pureVerdura);
         subtotal = subtotal + multiplicar(cantidad1.value, pureVerdura.cantCompra);
-        console.log("compra de " + pureVerdura.cantCompra);
+        setTimeout(() => {
+            swal("Producto agregado", "se agregaron "+cantidad1.value+" kg al carrito por valor de $" + pureVerdura.cantCompra, "success");
+        }, 500);
+       
     }
     else if (cantidad1.value > pureVerdura.cantUnitaria || cantidad1.value > pureVerdura.cantMayor) {
-        alert("la cantidad ingresada supera la disponibilidad del producto");
+        swal("Error", "la cantidad ingresada supera la disponibilidad del producto", "error");
     }
-    else if (!check_pu.checked && !check_pm.checked) {
-        alert("Seleccione un tipo de compra");
+    else if (!check_pu.checked && !check_pm.checked) { 
+        swal("Advertencia", "Seleccione un tipo de compra", "warning");
     }
 })
 comprac.addEventListener("click", () => {
@@ -105,19 +111,24 @@ comprac.addEventListener("click", () => {
         chipsManzana.id++;
         carrito.push(chipsManzana);
         subtotal = subtotal + multiplicar(cantidad2.value, chipsManzana.precioUnitario);
-        console.log("compra de " + chipsManzana.cantCompra);
+        setTimeout(() => {
+            swal("Producto agregado", "se agregaron "+cantidad2.value+" unidades al carrito por valor de $" + chipsManzana.cantCompra, "success");
+        }, 500);
     } else if (check_cm.checked && cantidad2.value <= chipsManzana.cantMayor) {
         chipsManzana.cantCompra = multiplicar(cantidad2.value, chipsManzana.precioMayor);
         chipsManzana.id++;
         carrito.push(chipsManzana);
         subtotal = subtotal + multiplicar(cantidad2.value, chipsManzana.cantCompra);
         console.log("compra de " + chipsManzana.cantCompra);
+        setTimeout(() => {
+            swal("Producto agregado", "se agregaron "+cantidad2.value+" kg al carrito por valor de $" + chipsManzana.cantCompra, "success");
+        }, 500);   
     }
     else if (cantidad2.value > chipsManzana.cantUnitaria || cantidad2.value > chipsManzana.cantMayor) {
-        alert("la cantidad ingresada supera la disponibilidad del producto");
+        swal("Error", "la cantidad ingresada supera la disponibilidad del producto", "error");
     }
     else if (!check_cu.checked && !check_cm.checked) {
-        alert("Seleccione un tipo de compra");
+        swal("Advertencia", "Seleccione un tipo de compra", "warning");
     }
 })
 compraz.addEventListener("click", () => {
@@ -127,18 +138,24 @@ compraz.addEventListener("click", () => {
         carrito.push(zanahorias);
         subtotal = subtotal + multiplicar(cantidad3.value, zanahorias.precioUnitario);
         console.log("compra de " + zanahorias.cantCompra);
+        setTimeout(() => {
+            swal("Producto agregado", "se agregaron "+cantidad3.value+" unidades al carrito por valor de $" + zanahorias.cantCompra, "success");
+        }, 500);  
     } else if (check_zm.checked && cantidad3.value <= zanahorias.cantMayor) {
         zanahorias.cantCompra = multiplicar(cantidad3.value, zanahorias.precioMayor);
         zanahorias.id++;
         carrito.push(zanahorias);
         subtotal = subtotal + multiplicar(cantidad3.value, zanahorias.cantCompra);
         console.log("compra de " + zanahorias.cantCompra);
+        setTimeout(() => {
+            swal("Producto agregado", "se agregaron "+cantidad3.value+" kg al carrito por valor de $" + zanahorias.cantCompra, "success");
+        }, 500);    
     }
     else if (cantidad3.value > zanahorias.cantUnitaria || cantidad3.value > zanahorias.cantMayor) {
-        alert("la cantidad ingresada supera la disponibilidad del producto");
+        swal("Error", "la cantidad ingresada supera la disponibilidad del producto", "error");
     }
     else if (!check_zu.checked && !check_zm.checked) {
-        alert("Seleccione un tipo de compra");
+        swal("Advertencia", "Seleccione un tipo de compra", "warning");
     }
 })
 compral.addEventListener("click", () => {
@@ -147,19 +164,24 @@ compral.addEventListener("click", () => {
         legumbresPlatano.id++;
         carrito.push(legumbresPlatano);
         subtotal = subtotal + multiplicar(cantidad4.value, legumbresPlatano.precioUnitario);
-        console.log("compra de " + legumbresPlatano.cantCompra);
+        setTimeout(() => {
+            swal("Producto agregado", "se agregaron "+cantidad4.value+" unidades al carrito por valor de $" + legumbresPlatano.cantCompra, "success");
+        }, 500);  
     } else if (check_lm.checked && cantidad4.value <= legumbresPlatano.cantMayor) {
         legumbresPlatano.cantCompra = multiplicar(cantidad4.value, legumbresPlatano.precioMayor);
         legumbresPlatano.id++;
         carrito.push(legumbresPlatano);
         subtotal = subtotal + multiplicar(cantidad4.value, legumbresPlatano.cantCompra);
-        console.log("compra de " + legumbresPlatano.cantCompra);
+        setTimeout(() => {
+            swal("Producto agregado", "se agregaron "+cantidad4.value+" kg al carrito por valor de $" + legumbresPlatano.cantCompra, "success");
+        }, 500);
+        
     }
     else if (cantidad4.value > legumbresPlatano.cantUnitaria || cantidad4.value > legumbresPlatano.cantMayor) {
-        alert("la cantidad ingresada supera la disponibilidad del producto");
+        swal("Error", "la cantidad ingresada supera la disponibilidad del producto", "error");
     }
     else if (!check_lu.checked && !check_lm.checked) {
-        alert("Seleccione un tipo de compra");
+        swal("Advertencia", "Seleccione un tipo de compra", "warning");
     }
 })
 button.addEventListener("click", () => {
@@ -185,9 +207,10 @@ button.addEventListener("click", () => {
         const buttonPagar = document.createElement("button");
         buttonPagar.innerText = "Pagar"
         buttonPagar.addEventListener("click", () => {
-            alert("compra realizada");
+            swal("Compra realizada", "Se ha pagado su carrito por un valor de $"+subtotal, "success");
             carrito = [];
             localStorage.removeItem("carrito");
+            localStorage.removeItem("subtotal");
         })
         compra.appendChild(buttonPagar);
         carro.appendChild(compra);

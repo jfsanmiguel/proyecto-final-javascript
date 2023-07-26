@@ -1,3 +1,63 @@
+
+    setTimeout(() => {
+        swal("Bienvenido(a) FreshDia", "Para comprar nuestros productos accede a la sección Tienda. Para acceder como cliente frecuente ve a la sección de iniciar sesión", "info")
+    }, 1000);
+const image=document.querySelector("#manzana");
+const boton=document.querySelector("#boton_manzana");
+let imagen="https://spoonacular.com/cdn/ingredients_100x100/apple.jpg"
+
+    boton.addEventListener("click",fetch("https://api.spoonacular.com/recipes/findByIngredients?apiKey=abf7a9364a6a408c92868f277c163768&ingredients=apples,+flour,+sugar&number=2").then((img)=>img.json()).then((data)=>{
+        image.innerHTML=`
+        <div class="main__receta"><img class="imagen" src=${imagen} alt=""/></div>
+         <div class="main__crisp">
+              <span class="crisp_nombre">Nombre receta: ${data[0].title}</span>
+              <span class="crisp_imagen">imagen receta: <img class="compra_imagen" src=${data[0].image} alt=""/></span>
+              <span class="crisp_nombre">Nombre ingrediente 1: ${data[0].missedIngredients[0].name}</span>
+              <span class="crisp_imagen">imagen ingrediente 1: <img class="compra_imagen" src=${data[0].missedIngredients[0].image} alt=""/></span>
+              <span class="crisp_nombre">Cantidad requerida en tazas de ingrediente 1: ${data[0].missedIngredients[0].amount}</span>
+              <span class="crisp_nombre">Nombre ingrediente 2: ${data[0].missedIngredients[1].name}(mantequilla)</span>
+              <span class="crisp_imagen">imagen ingrediente 2: <img class="compra_imagen" src=${data[0].missedIngredients[1].image} alt=""/></span>
+              <span class="crisp_nombre">Cantidad requerida en cucharas de mesa de ingrediente 1: ${data[0].missedIngredients[1].amount}</span>
+              <span class="crisp_nombre">Nombre ingrediente 3: ${data[0].missedIngredients[2].name}(avena)</span>
+              <span class="crisp_imagen">imagen ingrediente 3: <img class="compra_imagen" src=${data[0].missedIngredients[2].image} alt=""/></span>
+              <span class="crisp_nombre">Cantidad requerida en tazas de ingrediente 3: ${data[0].missedIngredients[2].amount}</span>
+              <span class="crisp_nombre">Nombre ingrediente 4: ${data[0].usedIngredients[0].name}(manzana Granny smith)</span>
+              <span class="crisp_imagen">imagen ingrediente 4: <img class="compra_imagen" src=${data[0].usedIngredients[0].image} alt=""/></span>
+              <span class="crisp_nombre">Cantidad requerida en tazas de ingrediente 4: ${data[0].usedIngredients[0].amount}</span>
+              <br>
+              <p>Precalentamos el horno a una temperatura de 180ºC.
+
+
+              En primer lugar, en un bol apto para el horno, mezclamos las láminas de manzana y los cranberries con el sirope de arce y la vainilla. Revolvemos para impregnar bien las manzanas. Reservamos.
+              
+              
+              Ahora hacemos la cobertura crujiente. En un cazo a fuego fuerte cocinamos la mantequilla hasta tostarla y que adquiera un sabor de fruto seco. Entonces, apagamos el fuego y dejamos reposar.
+              
+              
+              Seguido, hacemos la mezcla de avena. En un bol, mezclamos los copos de avena, el azúcar moreno, la harina de trigo integral, la canela y una pizca de sal. Removemos para mezclar.
+              
+              
+              Incorporamos al bol la mantequilla tostada y damos vueltas, para que todo esté bien impregnado.
+              
+              
+              Distribuimos la mezcla de avena y mantequilla por encima de las manzanas con cranberries.
+              
+              
+              Cubrimos una placa con papel de hornear y ponemos encima el bol de las manzanas y cranberries. Horneamos a 180ºC durante 45 minutos. Para comprobar que está hecho, clavamos un cuchillo en el centro y si sale con facilidad, las manzanas estarán tiernas.
+              
+              
+              Pasado el tiempo, dejamos reposar durante 15 minutos, para que se enfríe un poco.
+              
+              
+              Servimos. </p>
+           </div>
+    `
+    }))
+;
+
+
+
+
 // //variables
 // let opcion = 0;
 // let total = 0;

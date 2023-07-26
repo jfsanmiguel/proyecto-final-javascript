@@ -35,7 +35,8 @@
                         <a class="nav-link" href="../pages/contactanos.html">Contáctanos</a>
                         <a class="nav-link" href="../pages/sesion.html">Iniciar Sesión</a>
                     </div>
-                    <button id="buttonCarro" class="main__boton"><a class="nav-link" href="../pages/tienda.html">Carrito</a></button>
+                    <button id="buttonCarro" class="main__boton"><a class="nav-link"
+                            href="../pages/tienda.html">Carrito</a></button>
                 </div>
             </div>
         </nav>
@@ -46,8 +47,8 @@
                 <h1 class="main__inicio">Iniciar Sesión</h1>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Usuario</label>
-                    <input type="email" class="form-control input_sesion" id="exampleFormControlInput1" name="usuario"
-                        placeholder="Nombre@ejemplo.com">
+                    <input type="text" class="form-control input_sesion" id="exampleFormControlInput1" name="usuario"
+                        placeholder="Nombre de Usuario">
                 </div>
                 <div>
                     <label for="inputPassword5" class="form-label">Contraseña</label>
@@ -65,11 +66,16 @@
                 </div>
 
             </div>
-            <div class="main__registro">
+            <div  class="main__registro">
                 <h2 class="main__inicio">Registrarse</h2>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Usuario</label>
-                    <input type="email" class="form-control input_sesion" id="nombreNuevo" name="usuario"
+                    <input type="text" class="form-control input_sesion" id="nombreNuevo" name="usuario"
+                        placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                    <input type="email" class="form-control input_sesion" id="correoNuevo" name="usuario"
                         placeholder="Nombre@ejemplo.com">
                 </div>
                 <div>
@@ -80,7 +86,8 @@
                         Su contraseña debe tener entre 8-20 caracteres,puede contener tanto letras como números.
                     </div>
                     <div>
-                        <button type="submit" id="boton_registro" class="btn btn-primary mb-3 main__boton">Registrarse</button>
+                        <button type="submit" id="boton_registro"
+                            class="btn btn-primary mb-3 main__boton">Registrarse</button>
                     </div>
                     <div>
                     </div>
@@ -88,7 +95,7 @@
 
             </div>
         </div>
-
+        <div id="date"></div>
     </main>
     <footer class="footer">
         <section class="footer__foot">
@@ -122,11 +129,16 @@
             </div>
         </section>
     </footer>
+    <!-- luxon -->
+    <script src="
+https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js
+"></script>
     <script src="../archivosjs/sesion.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         </script>
+
 </body>
 
 </html>
